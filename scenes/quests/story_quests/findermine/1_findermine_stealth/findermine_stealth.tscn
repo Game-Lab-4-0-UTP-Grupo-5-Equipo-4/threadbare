@@ -33,6 +33,7 @@ tile_set = SubResource("TileSet_ak12f")
 
 [node name="HUD" parent="." instance=ExtResource("7_0nwde")]
 
+
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("11_j32cv")
 dialogue = ExtResource("12_11j8t")

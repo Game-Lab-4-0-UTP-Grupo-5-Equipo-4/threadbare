@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bd8o63o3lhqi4" path="res://scenes/quests/story_quests/findermine/findermine_character/assets/findermine_player_idle.png" id="3_d6nri"]
 [ext_resource type="Texture2D" uid="uid://dq6snyen71pte" path="res://scenes/quests/story_quests/findermine/findermine_character/assets/findermine_player_walk.png" id="4_h33un"]
 
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_yg72c"]
 atlas = ExtResource("1_wvs50")
 region = Rect2(0, 0, 192, 192)
