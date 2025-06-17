@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://bb5nvrr3d1ttj"]
+
+[ext_resource type="Script" uid="uid://yexf7grug202" path="res://scenes/quests/story_quests/findermine/findermine_character/scripts/findermine_player.gd" id="1_rkomj"]
+[ext_resource type="Texture2D" uid="uid://bd8o63o3lhqi4" path="res://scenes/quests/story_quests/findermine/findermine_character/assets/findermine_player_idle.png" id="2_rkomj"]
+[ext_resource type="Texture2D" uid="uid://dq6snyen71pte" path="res://scenes/quests/story_quests/findermine/findermine_character/assets/findermine_player_walk.png" id="3_h0tfa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pj0k"]
+atlas = ExtResource("2_rkomj")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo2vj"]
+atlas = ExtResource("2_rkomj")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yocq"]
+atlas = ExtResource("2_rkomj")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdq2w"]
+atlas = ExtResource("3_h0tfa")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s115w"]
+atlas = ExtResource("3_h0tfa")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0oqt4"]
+atlas = ExtResource("3_h0tfa")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vdq2w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pj0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo2vj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yocq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdq2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s115w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0oqt4")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hynn6"]
+radius = 17.0
+height = 34.0
+
+[node name="FinderminePlayer" type="CharacterBody2D"]
+script = ExtResource("1_rkomj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2, 1)
+scale = Vector2(0.894089, 0.894089)
+sprite_frames = SubResource("SpriteFrames_vdq2w")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("CapsuleShape2D_hynn6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
