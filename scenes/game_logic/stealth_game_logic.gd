@@ -16,12 +16,6 @@ func _ready() -> void:
 		guard.player_detected.connect(self._on_player_detected)
 
 
-func _on_player_detected(player: Node2D) -> void:
-	player.mode = Player.Mode.DEFEATED
-	await get_tree().create_timer(2.0).timeout
-	SceneSwitcher.reload_with_transition(Transition.Effect.FADE, Transition.Effect.FADE)
-
-
 func _set_zoom(new_value: float) -> void:
 	zoom = new_value
 	if Engine.is_editor_hint():

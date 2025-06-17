@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://17c67uvtnky0"]
+
+[ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_ggmfd"]
+[ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_0nwde"]
+[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_j32cv"]
+[ext_resource type="PackedScene" uid="uid://bb5nvrr3d1ttj" path="res://scenes/quests/story_quests/findermine/findermine_character/scenes/findermine_player.tscn" id="12_5xi0n"]
+[ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_11j8t"]
+
+[sub_resource type="TileSet" id="TileSet_ak12f"]
+tile_size = Vector2i(24, 24)
+
+[node name="StealthTemplateLevel" type="Node2D"]
+y_sort_enabled = true
+
+[node name="FinderminePlayer" parent="." instance=ExtResource("12_5xi0n")]
+position = Vector2(170, 437)
+
+[node name="StealthGameLogic" type="Node" parent="."]
+script = ExtResource("1_ggmfd")
+zoom = 1.7
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.481789, 0.48179, 0.481789, 1)
+
+[node name="TileMapLayers" type="Node2D" parent="."]
+y_sort_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="ground" type="TileMapLayer" parent="TileMapLayers"]
+tile_set = SubResource("TileSet_ak12f")
+
+[node name="ScreenOverlay" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("7_0nwde")]
+
+
+[node name="Cinematic" type="Node2D" parent="."]
+script = ExtResource("11_j32cv")
+dialogue = ExtResource("12_11j8t")
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
