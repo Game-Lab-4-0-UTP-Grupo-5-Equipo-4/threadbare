@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chl61fckck0d4"
-path="res://.godot/imported/findermine_player_attack_02.png-f9cc3bf2cdc43406c8db2e75b50e8500.ctex"
+uid="uid://bxgdw616o2cyq"
+path="res://.godot/imported/Cliff_walls_Tiles.png-aab92576ad8e507922dd93db046868c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/findermine/findermine_player_components/findermine_player_attack_02.png"
-dest_files=["res://.godot/imported/findermine_player_attack_02.png-f9cc3bf2cdc43406c8db2e75b50e8500.ctex"]
+source_file="res://scenes/quests/story_quests/findermine/findermine_player_components/Cliff_walls_Tiles.png"
+dest_files=["res://.godot/imported/Cliff_walls_Tiles.png-aab92576ad8e507922dd93db046868c7.ctex"]
 
 [params]
 

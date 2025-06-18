@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wyr8vs1ko5sx"
-path="res://.godot/imported/findermine_Replace image.png-1760bd282a17ba78c8e9e74bdb43d48a.ctex"
+uid="uid://clfq5xql76r6n"
+path="res://.godot/imported/alex_player_attack_02.png-748022bb42d138184f02307f21c0dc13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/findermine/0_findermine_intro/findermine_intro_components/findermine_Replace image.png"
-dest_files=["res://.godot/imported/findermine_Replace image.png-1760bd282a17ba78c8e9e74bdb43d48a.ctex"]
+source_file="res://scenes/quests/story_quests/findermine/findermine_player_components/alex_player_attack_02.png"
+dest_files=["res://.godot/imported/alex_player_attack_02.png-748022bb42d138184f02307f21c0dc13.ctex"]
 
 [params]
 

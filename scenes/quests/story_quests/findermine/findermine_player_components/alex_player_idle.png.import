@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3csg3f353tqx"
-path="res://.godot/imported/findermine_player_defeated.png-23697f73c9f3bd1492ce6cb4d73fcbb9.ctex"
+uid="uid://d0st163eg3osq"
+path="res://.godot/imported/alex_player_idle.png-d7b288948efa4df85bb0419127f22929.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/findermine/findermine_player_components/findermine_player_defeated.png"
-dest_files=["res://.godot/imported/findermine_player_defeated.png-23697f73c9f3bd1492ce6cb4d73fcbb9.ctex"]
+source_file="res://scenes/quests/story_quests/findermine/findermine_player_components/alex_player_idle.png"
+dest_files=["res://.godot/imported/alex_player_idle.png-d7b288948efa4df85bb0419127f22929.ctex"]
 
 [params]
 
