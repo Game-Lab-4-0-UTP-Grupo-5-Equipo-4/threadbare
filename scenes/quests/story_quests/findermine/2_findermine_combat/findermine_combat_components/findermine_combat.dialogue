@@ -1,11 +1,16 @@
-# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-FileCopyrightText: Findermind Authors
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+Figura Oscura:
+(Lanzando frascos de vidrio)
+"¡Tú hiciste esto posible!"
+Alex:
+(Esquivando)
+"¡No entiendo! ¿Qué experimento?"
 => END
 
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+Narrador:
+"Los fragmentos de vidrio forman una palabra en el suelo: 'ETHICS'..."
 => END

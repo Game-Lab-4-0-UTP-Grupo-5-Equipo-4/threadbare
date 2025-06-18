@@ -1,6 +1,10 @@
-# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-FileCopyrightText: Findermind Authors
 # SPDX-License-Identifier: MPL-2.0
+
 ~ start
-Select the CollectibleItem node and set "Next Scene" and "Item > Type" in the Inspector.
-You're doin' great!
+Alex:
+(Recoge la llave del suelo)
+"Una llave sin cerradura... ¿Para qué sirve esto?"
+(Susurro distante):
+"Todo tiene un propósito aquí..."
 => END
