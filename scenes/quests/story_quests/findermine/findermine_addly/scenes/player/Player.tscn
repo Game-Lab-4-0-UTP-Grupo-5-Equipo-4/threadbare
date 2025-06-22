@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://7kc7jat8au7e"]
+
+[ext_resource type="Texture2D" uid="uid://k43ofly3gnqc" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/stella_player_idle.png" id="1_x2p55"]
+[ext_resource type="Texture2D" uid="uid://cfr8vrn4jcf0q" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/stella_player_walk.png" id="2_v4dm6"]
+[ext_resource type="Script" uid="uid://bf4yl1bdq1bvm" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/player/player.gd" id="3_v4dm6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7blr"]
+atlas = ExtResource("1_x2p55")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l08cb"]
+atlas = ExtResource("1_x2p55")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7hgw"]
+atlas = ExtResource("1_x2p55")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nauwc"]
+atlas = ExtResource("2_v4dm6")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwed4"]
+atlas = ExtResource("2_v4dm6")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0nqk"]
+atlas = ExtResource("2_v4dm6")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7acrw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7blr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l08cb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7hgw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nauwc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwed4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0nqk")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r6cvr"]
+radius = 17.0
+height = 36.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 16
+script = ExtResource("3_v4dm6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7acrw")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 4)
+shape = SubResource("CapsuleShape2D_r6cvr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
