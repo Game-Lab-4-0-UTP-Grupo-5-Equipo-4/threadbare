@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://17c67uvtnky0"]
+[gd_scene load_steps=20 format=4 uid="uid://17c67uvtnky0"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_ggmfd"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_n5mxn"]
@@ -7,8 +7,17 @@
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_3v77k"]
 [ext_resource type="PackedScene" uid="uid://7kc7jat8au7e" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/player/Player.tscn" id="9_eu5ge"]
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_30nml"]
+[ext_resource type="Texture2D" uid="uid://b3xkk5bc6dhdu" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/Calendarpopoup .png" id="10_a07c4"]
+[ext_resource type="Script" uid="uid://d37m4sr1buv7c" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/calendar/calendar_pop_up.gd" id="10_d1g70"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_j32cv"]
+[ext_resource type="PackedScene" uid="uid://dfwcl12yotmkt" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/calendar/calendar.tscn" id="12_5xi0n"]
 [ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_11j8t"]
+[ext_resource type="Script" uid="uid://clei0uigm35tc" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/clock/reloj_pop_up.gd" id="12_d4kod"]
+[ext_resource type="PackedScene" uid="uid://cus3ydjp3e7vo" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/clock/Clock.tscn" id="13_4n730"]
+[ext_resource type="Texture2D" uid="uid://66dvjf5r41se" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/relogPopUp.png" id="13_nbxuu"]
+[ext_resource type="Script" uid="uid://cr3sothouhjej" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/photo/photo_pop_up.gd" id="14_0m2fp"]
+[ext_resource type="Texture2D" uid="uid://cbrhvu368vw2i" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/foto.jpg" id="15_38sm8"]
+[ext_resource type="PackedScene" uid="uid://okhuhl6gv48r" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/photo/Photo.tscn" id="18_38sm8"]
 
 [sub_resource type="Resource" id="Resource_idy4y"]
 script = ExtResource("9_3v77k")
@@ -56,3 +65,101 @@ collected_dialogue = ExtResource("10_30nml")
 script = ExtResource("11_j32cv")
 dialogue = ExtResource("12_11j8t")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CalendarPopUp" type="Panel" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_d1g70")
+
+[node name="Image" type="TextureRect" parent="CanvasLayer/CalendarPopUp"]
+layout_mode = 0
+offset_left = 714.0
+offset_top = 188.0
+offset_right = 1243.0
+offset_bottom = 891.0
+texture = ExtResource("10_a07c4")
+stretch_mode = 5
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/CalendarPopUp"]
+layout_mode = 0
+offset_left = 1181.0
+offset_top = 870.0
+offset_right = 1239.0
+offset_bottom = 901.0
+text = "Cerrar"
+
+[node name="RelojPopUp" type="Panel" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("12_d4kod")
+
+[node name="Image" type="TextureRect" parent="CanvasLayer/RelojPopUp"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 152.0
+offset_right = 1340.0
+offset_bottom = 879.0
+texture = ExtResource("13_nbxuu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/RelojPopUp"]
+layout_mode = 0
+offset_left = 1264.0
+offset_top = 792.0
+offset_right = 1322.0
+offset_bottom = 823.0
+text = "Cerrar"
+
+[node name="PhotoPopUp" type="Panel" parent="CanvasLayer"]
+visible = false
+layout_direction = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("14_0m2fp")
+
+[node name="Image" type="TextureRect" parent="CanvasLayer/PhotoPopUp"]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 193.0
+offset_right = 1425.0
+offset_bottom = 920.0
+texture = ExtResource("15_38sm8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/PhotoPopUp"]
+layout_mode = 0
+offset_left = 1350.0
+offset_top = 198.0
+offset_right = 1408.0
+offset_bottom = 229.0
+text = "Cerrar"
+
+[node name="Calendar" parent="." instance=ExtResource("12_5xi0n")]
+position = Vector2(694, 169)
+
+[node name="Clock" parent="." instance=ExtResource("13_4n730")]
+position = Vector2(330, 71)
+
+[node name="Photo" parent="." instance=ExtResource("18_38sm8")]
+position = Vector2(120, 454)
+
+[connection signal="pressed" from="CanvasLayer/CalendarPopUp/CloseButton" to="CanvasLayer/CalendarPopUp" method="_on_close_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/RelojPopUp/CloseButton" to="CanvasLayer/RelojPopUp" method="_on_close_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/PhotoPopUp/CloseButton" to="CanvasLayer/PhotoPopUp" method="_on_close_button_pressed"]
