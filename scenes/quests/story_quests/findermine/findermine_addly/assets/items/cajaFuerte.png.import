@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blaorrsdad28q"
-path="res://.godot/imported/cajaFuerte.jpg-54822d2b287107f47f8ba702613bfa5f.ctex"
+uid="uid://o5sky7p1rt8h"
+path="res://.godot/imported/cajaFuerte.png-6df50e020cf8c2a0916fc678aacba499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/findermine/findermine_addly/assets/items/cajaFuerte.jpg"
-dest_files=["res://.godot/imported/cajaFuerte.jpg-54822d2b287107f47f8ba702613bfa5f.ctex"]
+source_file="res://scenes/quests/story_quests/findermine/findermine_addly/assets/items/cajaFuerte.png"
+dest_files=["res://.godot/imported/cajaFuerte.png-6df50e020cf8c2a0916fc678aacba499.ctex"]
 
 [params]
 

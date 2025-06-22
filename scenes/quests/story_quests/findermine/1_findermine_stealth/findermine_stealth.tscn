@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://17c67uvtnky0"]
+[gd_scene load_steps=21 format=4 uid="uid://17c67uvtnky0"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_ggmfd"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_n5mxn"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://cr3sothouhjej" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/photo/photo_pop_up.gd" id="14_0m2fp"]
 [ext_resource type="Texture2D" uid="uid://cbrhvu368vw2i" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/foto.jpg" id="15_38sm8"]
 [ext_resource type="PackedScene" uid="uid://okhuhl6gv48r" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/photo/Photo.tscn" id="18_38sm8"]
+[ext_resource type="PackedScene" uid="uid://bg68qrunuqgww" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/SecurityBox/safeBox.tscn" id="19_cqx6t"]
 
 [sub_resource type="Resource" id="Resource_idy4y"]
 script = ExtResource("9_3v77k")
@@ -56,7 +57,7 @@ tile_set = ExtResource("2_n5mxn")
 [node name="HUD" parent="." instance=ExtResource("7_0nwde")]
 
 [node name="CollectibleItem" parent="." instance=ExtResource("8_ov00x")]
-position = Vector2(719, 536)
+position = Vector2(1272, 958)
 next_scene = "uid://cixic1otdopd2"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("10_30nml")
@@ -152,13 +153,16 @@ offset_bottom = 229.0
 text = "Cerrar"
 
 [node name="Calendar" parent="." instance=ExtResource("12_5xi0n")]
-position = Vector2(694, 169)
+position = Vector2(646, 495)
 
 [node name="Clock" parent="." instance=ExtResource("13_4n730")]
 position = Vector2(330, 71)
 
 [node name="Photo" parent="." instance=ExtResource("18_38sm8")]
 position = Vector2(120, 454)
+
+[node name="SafeBox" parent="." instance=ExtResource("19_cqx6t")]
+position = Vector2(666, 126)
 
 [connection signal="pressed" from="CanvasLayer/CalendarPopUp/CloseButton" to="CanvasLayer/CalendarPopUp" method="_on_close_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/RelojPopUp/CloseButton" to="CanvasLayer/RelojPopUp" method="_on_close_button_pressed"]

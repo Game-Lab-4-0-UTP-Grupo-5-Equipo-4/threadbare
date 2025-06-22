@@ -1,10 +1,152 @@
-[gd_scene format=3 uid="uid://dy47yca10jpnw"]
+[gd_scene load_steps=4 format=3 uid="uid://dy47yca10jpnw"]
+
+[ext_resource type="Script" uid="uid://e16bx7p1rgow" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/scenes/SafeUI/safe_ui.gd" id="1_d2cdc"]
+[ext_resource type="Texture2D" uid="uid://ctqdj48advsqk" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/caja-escena.png" id="1_ry6ew"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ry6ew"]
+bg_color = Color(0.576471, 0.643137, 0.168627, 0)
 
 [node name="SafeUi" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_d2cdc")
 
-[node name="Fondo" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -154.0
+offset_top = -137.0
+offset_right = 2091.0
+offset_bottom = 1281.0
+texture = ExtResource("1_ry6ew")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DisplayLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 83.0
+offset_right = 1001.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0, 0.698039, 0, 1)
+theme_override_font_sizes/font_size = 90
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1263.0
+offset_top = 184.0
+offset_right = 1428.0
+offset_bottom = 348.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1477.0
+offset_top = 180.0
+offset_right = 1642.0
+offset_bottom = 344.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1696.0
+offset_top = 178.0
+offset_right = 1861.0
+offset_bottom = 342.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="4" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1261.0
+offset_top = 397.0
+offset_right = 1426.0
+offset_bottom = 561.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="5" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1473.0
+offset_top = 393.0
+offset_right = 1638.0
+offset_bottom = 557.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="6" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1692.0
+offset_top = 395.0
+offset_right = 1857.0
+offset_bottom = 559.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="7" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1259.0
+offset_top = 609.0
+offset_right = 1424.0
+offset_bottom = 773.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="8" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1473.0
+offset_top = 609.0
+offset_right = 1638.0
+offset_bottom = 773.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="9" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1690.0
+offset_top = 611.0
+offset_right = 1855.0
+offset_bottom = 775.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="0" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1473.0
+offset_top = 823.0
+offset_right = 1638.0
+offset_bottom = 987.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+
+[node name="ConfirmButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1686.0
+offset_top = 819.0
+offset_right = 1855.0
+offset_bottom = 983.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+text = "ENTER"
+
+[node name="CancelButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1255.0
+offset_top = 821.0
+offset_right = 1426.0
+offset_bottom = 985.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ry6ew")
+text = "CANCEL"
+
+[node name="ConfirmLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 1253.0
+offset_top = 43.0
+offset_right = 1870.0
+offset_bottom = 169.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="Panel/CancelButton" to="." method="_on_cancel_button_pressed"]
