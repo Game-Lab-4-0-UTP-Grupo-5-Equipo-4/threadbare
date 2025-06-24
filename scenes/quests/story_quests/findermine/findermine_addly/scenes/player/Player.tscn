@@ -1,44 +1,44 @@
 [gd_scene load_steps=12 format=3 uid="uid://7kc7jat8au7e"]
 
-[ext_resource type="Texture2D" uid="uid://k43ofly3gnqc" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/stella_player_idle.png" id="1_x2p55"]
-[ext_resource type="Texture2D" uid="uid://cfr8vrn4jcf0q" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/stella_player_walk.png" id="2_v4dm6"]
+[ext_resource type="Texture2D" uid="uid://blwldfflkjr20" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_idle.png" id="2_v4dm6"]
+[ext_resource type="Texture2D" uid="uid://7twcvsl7p1xo" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_walk.png" id="3_t7blr"]
 [ext_resource type="Script" uid="uid://bf4yl1bdq1bvm" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/player/player.gd" id="3_v4dm6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t7blr"]
-atlas = ExtResource("1_x2p55")
+[sub_resource type="AtlasTexture" id="AtlasTexture_l08cb"]
+atlas = ExtResource("2_v4dm6")
 region = Rect2(0, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_l08cb"]
-atlas = ExtResource("1_x2p55")
-region = Rect2(192, 0, 192, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_m7hgw"]
-atlas = ExtResource("1_x2p55")
-region = Rect2(384, 0, 192, 192)
+atlas = ExtResource("2_v4dm6")
+region = Rect2(192, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nauwc"]
 atlas = ExtResource("2_v4dm6")
-region = Rect2(0, 0, 192, 192)
+region = Rect2(384, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwed4"]
-atlas = ExtResource("2_v4dm6")
-region = Rect2(192, 0, 192, 192)
+atlas = ExtResource("3_t7blr")
+region = Rect2(0, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e0nqk"]
-atlas = ExtResource("2_v4dm6")
+atlas = ExtResource("3_t7blr")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7acrw"]
+atlas = ExtResource("3_t7blr")
 region = Rect2(384, 0, 192, 192)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7acrw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t7blr")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_l08cb")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m7hgw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nauwc")
 }],
 "loop": true,
 "name": &"idle",
@@ -46,13 +46,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nauwc")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_iwed4")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_e0nqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7acrw")
 }],
 "loop": true,
 "name": &"walk",
