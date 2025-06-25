@@ -1,0 +1,204 @@
+[gd_scene load_steps=24 format=3 uid="uid://dp506v6ilo57j"]
+
+[ext_resource type="Script" uid="uid://dp7mo487c0kdb" path="res://scenes/quests/story_quests/findermine/scripts/ui/menu/menu.gd" id="1_trpx4"]
+[ext_resource type="FontFile" uid="uid://gko7adidc5h2" path="res://scenes/quests/story_quests/findermine/fonts/Menu/Doctor Glitch.otf" id="2_1557p"]
+[ext_resource type="Texture2D" uid="uid://nohpf0awubxl" path="res://scenes/quests/story_quests/findermine/tilemaps/room1/Menú.png" id="2_bwacy"]
+[ext_resource type="Texture2D" uid="uid://cqvquh6pweo8u" path="res://scenes/quests/story_quests/findermine/tilemaps/button_2.png" id="3_0cswp"]
+[ext_resource type="Script" uid="uid://bxum8sc1omeqj" path="res://scenes/quests/story_quests/findermine/ui/menu/texture_rect.gd" id="3_2m186"]
+[ext_resource type="Texture2D" uid="uid://xwcnvw1dx6e8" path="res://scenes/quests/story_quests/findermine/tilemaps/button.png" id="3_yw5m1"]
+[ext_resource type="Script" uid="uid://dco1slgme54gy" path="res://scenes/quests/story_quests/findermine/ui/menu/texture_rect_2.gd" id="5_rlutc"]
+[ext_resource type="Texture2D" uid="uid://cspyufqxmdxlx" path="res://scenes/quests/story_quests/findermine/tilemaps/room1/sombra-1.png" id="7_sdlg6"]
+[ext_resource type="Script" uid="uid://cihex2r145je3" path="res://scenes/quests/story_quests/findermine/ui/menu/texture_rect_3.gd" id="7_sghvf"]
+[ext_resource type="Texture2D" uid="uid://bioek2xje1lov" path="res://scenes/quests/story_quests/findermine/tilemaps/room1/sombra-2.png" id="8_2m186"]
+[ext_resource type="Texture2D" uid="uid://df11fm7loe0bf" path="res://scenes/quests/story_quests/findermine/tilemaps/room1/Brillos.png" id="9_6nn4d"]
+[ext_resource type="Script" uid="uid://c30wop5n3rs0d" path="res://scenes/quests/story_quests/findermine/ui/menu/texture_rect_4.gd" id="9_h8l60"]
+[ext_resource type="Texture2D" uid="uid://dl7aq2fxkl0tv" path="res://scenes/quests/story_quests/findermine/tilemaps/room1/brillo-2.png" id="10_4cw6x"]
+[ext_resource type="Script" uid="uid://cmvkv6qy83m7u" path="res://scenes/quests/story_quests/findermine/ui/menu/texture_rect_5.gd" id="11_b58db"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_avtg6"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bwacy"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yw5m1"]
+texture = ExtResource("3_0cswp")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jimgr"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s3eys"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sdlg6"]
+texture = ExtResource("3_0cswp")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2m186"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6nn4d"]
+texture = ExtResource("3_yw5m1")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4cw6x"]
+texture = ExtResource("3_0cswp")
+expand_margin_top = 15.0
+expand_margin_bottom = 10.0
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_trpx4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -4.0
+offset_right = 1834.0
+offset_bottom = 1033.0
+texture = ExtResource("2_bwacy")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = -106.0
+offset_top = -52.0
+offset_right = 1835.0
+offset_bottom = 1097.0
+texture = ExtResource("2_bwacy")
+script = ExtResource("3_2m186")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0610687
+anchor_right = 0.508179
+anchor_bottom = 0.509161
+offset_left = -85.0
+offset_top = -52.0
+offset_right = 1252.0
+offset_bottom = 699.0
+texture = ExtResource("7_sdlg6")
+script = ExtResource("5_rlutc")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = -194.0
+offset_top = -52.0
+offset_right = 1835.0
+offset_bottom = 1032.0
+texture = ExtResource("8_2m186")
+script = ExtResource("7_sghvf")
+
+[node name="TextureRect4" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0594329
+anchor_right = 0.506543
+anchor_bottom = 0.508197
+offset_left = -85.0
+offset_top = -52.0
+offset_right = 1252.0
+offset_bottom = 699.0
+texture = ExtResource("9_6nn4d")
+script = ExtResource("9_h8l60")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect5" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0610687
+anchor_right = 0.504907
+anchor_bottom = 0.509161
+offset_left = -85.0
+offset_top = -52.0
+offset_right = 1252.0
+offset_bottom = 699.0
+texture = ExtResource("10_4cw6x")
+script = ExtResource("11_b58db")
+metadata/_edit_use_anchors_ = true
+
+[node name="ContainerButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 508.0
+offset_top = 118.0
+offset_right = 838.0
+offset_bottom = 407.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="BT_Play" type="Button" parent="ContainerButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1557p")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/hover = SubResource("StyleBoxTexture_avtg6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bwacy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yw5m1")
+text = "JUGAR"
+
+[node name="BT_Options" type="Button" parent="ContainerButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1557p")
+theme_override_font_sizes/font_size = 46
+theme_override_styles/hover = SubResource("StyleBoxTexture_jimgr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s3eys")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sdlg6")
+text = "OPCIONES"
+
+[node name="BT_Out" type="Button" parent="ContainerButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1557p")
+theme_override_font_sizes/font_size = 46
+theme_override_styles/hover = SubResource("StyleBoxTexture_2m186")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6nn4d")
+theme_override_styles/normal = SubResource("StyleBoxTexture_4cw6x")
+text = "SALIR"
+
+[node name="ContainerLabel" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -574.0
+offset_right = 96.0
+offset_bottom = 146.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="ContainerLabel"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_1557p")
+theme_override_font_sizes/font_size = 91
+text = "FINDERMIND"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="ContainerButtons/BT_Play" to="." method="_on_bt_play_pressed"]
+[connection signal="pressed" from="ContainerButtons/BT_Options" to="." method="_on_bt_options_pressed"]
+[connection signal="pressed" from="ContainerButtons/BT_Out" to="." method="_on_bt_out_pressed"]
