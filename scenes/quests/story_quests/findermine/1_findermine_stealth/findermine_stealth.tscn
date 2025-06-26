@@ -67,6 +67,10 @@ script = ExtResource("11_j32cv")
 dialogue = ExtResource("12_11j8t")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
+[node name="Grass2" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAJAAgAFQADAAQAAAAAAAcAFQABAAUAABAAAAIAFQABAAUAABADAAEAFQADAAIAAAAHAAEAFQAAAAQAAAAQAAIAFQADAAQAAAAQAAEAFQABAAQAAAAMAAAAGAADAAAAAAAMAAEAGAADAAEAAAABAAAAGAADAAAAAAABAAEAGAADAAEAAAAGAAAAGAADAAAAAAAGAAEAGAADAAEAAAAJAAAAGAADAAAAAAAJAAEAGAADAAEAAAARAAAAGAADAAAAAAARAAEAGAADAAEAAAAOAAAAGAAAAAYAAAAOAAEAGAAAAAcAAAA=")
+tile_set = ExtResource("2_n5mxn")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="CalendarPopUp" type="Panel" parent="CanvasLayer"]
@@ -153,13 +157,13 @@ offset_bottom = 229.0
 text = "Cerrar"
 
 [node name="Calendar" parent="." instance=ExtResource("12_5xi0n")]
-position = Vector2(646, 495)
+position = Vector2(611, 511)
 
 [node name="Clock" parent="." instance=ExtResource("13_4n730")]
 position = Vector2(330, 71)
 
 [node name="Photo" parent="." instance=ExtResource("18_38sm8")]
-position = Vector2(120, 454)
+position = Vector2(12, 463)
 
 [node name="SafeBox" parent="." instance=ExtResource("19_cqx6t")]
 position = Vector2(666, 126)

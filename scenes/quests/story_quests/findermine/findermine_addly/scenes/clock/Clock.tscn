@@ -4,23 +4,24 @@
 [ext_resource type="Script" uid="uid://bkmb4r8v4h3mx" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/clock/clock.gd" id="1_mfyxx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mqie"]
-size = Vector2(160, 213)
+size = Vector2(113, 173)
 
 [node name="Clock" type="Node2D"]
 script = ExtResource("1_mfyxx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, 0)
-scale = Vector2(0.237652, 0.237652)
+position = Vector2(0.438503, -28.5)
+scale = Vector2(0.122995, 0.110561)
 texture = ExtResource("1_8mqie")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1, 38.5)
+position = Vector2(1.5, 15.5)
 shape = SubResource("RectangleShape2D_8mqie")
 
 [node name="LabelHint" type="Label" parent="."]
+texture_filter = 5
 offset_left = -54.0
 offset_top = -75.0
 offset_right = 58.0
