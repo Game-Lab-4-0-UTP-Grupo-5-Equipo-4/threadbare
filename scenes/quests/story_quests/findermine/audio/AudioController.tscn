@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b30gmpl1ay4sn"]
+
+[ext_resource type="Script" uid="uid://v83l8tkarw2g" path="res://scenes/quests/story_quests/findermine/scripts/audio/background/audio_controller.gd" id="1_ojnui"]
+[ext_resource type="AudioStream" uid="uid://drdci5de81rrv" path="res://scenes/quests/story_quests/findermine/sounds/background/fondo-findermine-recortado.mp3" id="2_3oigm"]
+
+[node name="AudioController" type="Node"]
+script = ExtResource("1_ojnui")
+
+[node name="bg_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_3oigm")
+volume_db = -10.73
+parameters/looping = true
