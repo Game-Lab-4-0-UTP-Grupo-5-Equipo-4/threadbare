@@ -4,11 +4,11 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-Welcome to the StoryQuest template, where you'll learn how to mod elements of each scene and create your own StoryQuest! Let's start with the intro.
-In the Godot FileSystem, find the intro folder and double-click on the intro dialogue file to edit the text.
-Press enter to add a new line. Each line becomes a new dialogue box in-game.
-Select Cinematic node; drag your StoryQuest dialogue to the "Dialogue" field in the Inspector.
-Set the next scene using the "Next Scene" field in the Inspector.
+Siempre creíste que eras bueno en tu trabajo... Hasta aquella noche.
+Eras el encargado de seguridad de la fábrica. Solo un turno más. Solo una rutina. Pero te confiaste.
+Un error. Un pequeño descuido. Y cuando las máquinas fallaron... Personas importantes murieron.
+Ahora despiertas en una habitación extraña. Puertas cerradas. Paredes vacías.
+'Esto no es un castigo... es una oportunidad.' ¿Podrás escapar de este lugar? ¿O de tus propios recuerdos?
 do animation_player.play(&"walk_off")
-Explore other elements to mod, like the placeholder image, tile map, and animation options for this scene!
+Presiona "ENTER" para ineractuar con los objetos
 => END

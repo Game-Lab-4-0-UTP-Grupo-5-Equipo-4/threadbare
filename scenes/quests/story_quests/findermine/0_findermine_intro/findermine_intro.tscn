@@ -5,8 +5,8 @@
 [ext_resource type="SpriteFrames" uid="uid://d3hplvaw1un1n" path="res://scenes/quests/story_quests/findermine/findermine_player_components/findermine_player.tres" id="3_klg5a"]
 [ext_resource type="Texture2D" uid="uid://bnysumv3er7gr" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/items/cama-inicio.png" id="3_kmsy6"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_bt8sh"]
-[ext_resource type="Resource" uid="uid://cqjngitoc5yx7" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_intro.dialogue" id="5_3lchp"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_eafiq"]
+[ext_resource type="Resource" uid="uid://nsb7vbvyvu6v" path="res://scenes/quests/story_quests/findermine/0_findermine_intro/findermine_intro_components/findermine_intro.dialogue" id="6_kmsy6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4rwjf"]
 texture = ExtResource("3_kmsy6")
@@ -190,7 +190,7 @@ libraries = {
 
 [node name="Cinematic" type="Node2D" parent="." node_paths=PackedStringArray("animation_player")]
 script = ExtResource("4_bt8sh")
-dialogue = ExtResource("5_3lchp")
+dialogue = ExtResource("6_kmsy6")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
 next_scene = "uid://17c67uvtnky0"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

@@ -4,10 +4,16 @@
 
 [resource]
 script = ExtResource("1_nyif8")
-title = ""
-description = ""
+title = "FINDERMINE"
+description = "Despiertas. La habitación está fría. Las paredes respiran el eco de una fábrica abandonada... pero tú no recuerdas cómo llegaste aquí.
+
+Solo hay una puerta. Cerrada. Una llave la liberaría, pero algo más te espera al otro lado: la verdad.
+
+Eras el guardián de este lugar. Vigilante. Protector. Pero algo salió mal. Un descuido. Un instante de distracción... y la tragedia llegó. Ahora, tu celda no son estos muros, sino tu propia culpa.
+
+Resuelve los puzles que el destino dejó atrás. Encuentra las pistas ocultas en los objetos que alguna vez tuviste en tus manos. Descifra el pasado... antes de que el pasado te devore a ti."
 authors = Array[String]([])
 affiliation = ""
-first_scene = "uid://c1gdct760l86h"
+first_scene = "uid://dafebjx34ypki"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"
