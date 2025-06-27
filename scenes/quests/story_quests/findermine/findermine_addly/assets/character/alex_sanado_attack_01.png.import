@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k43ofly3gnqc"
-path="res://.godot/imported/stella_player_idle.png-111c05c6b9b8990c564c565f86416a76.ctex"
+uid="uid://dlka75ehqjd1c"
+path="res://.godot/imported/alex_sanado_attack_01.png-d5a1f02b894513e7ad6920a4e6c9a221.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/stella_player_idle.png"
-dest_files=["res://.godot/imported/stella_player_idle.png-111c05c6b9b8990c564c565f86416a76.ctex"]
+source_file="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_sanado_attack_01.png"
+dest_files=["res://.godot/imported/alex_sanado_attack_01.png-d5a1f02b894513e7ad6920a4e6c9a221.ctex"]
 
 [params]
 
