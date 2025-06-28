@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cbhegvrs3xojd"
+path="res://.godot/imported/findermine_sequence_puzzle.dialogue-cf33cb88c8978def56e83a23dcba200c.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/findermine/3_findermine_sequence_puzzle/Findermine_sequence_puzzle/findermine_sequence_puzzle.dialogue"
+dest_files=["res://.godot/imported/findermine_sequence_puzzle.dialogue-cf33cb88c8978def56e83a23dcba200c.tres"]
+
+[params]
+
+defaults=true

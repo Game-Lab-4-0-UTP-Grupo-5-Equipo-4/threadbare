@@ -76,40 +76,48 @@ script = ExtResource("1_5e6cr")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 646.0
+offset_left = -69.0
+offset_top = -25.0
+offset_right = 1957.0
+offset_bottom = 1110.0
 texture = ExtResource("3_lo6nc")
 
 [node name="TextureRect" type="TextureRect" parent="TextureRect"]
 layout_mode = 0
 offset_left = -85.0
 offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+offset_right = 1951.0
+offset_bottom = 1118.0
 texture = ExtResource("3_lo6nc")
 script = ExtResource("4_rm1bj")
 
 [node name="TextureRect2" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
-offset_left = -85.0
-offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0513327
+anchor_top = 0.0660793
+anchor_right = 0.963968
+anchor_bottom = 1.09956
 texture = ExtResource("5_bg0gs")
 script = ExtResource("6_qnjov")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect3" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
-offset_left = -85.0
-offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0784798
+anchor_top = -0.0352423
+anchor_right = 0.941757
+anchor_bottom = 1.00441
 texture = ExtResource("7_dllwy")
 script = ExtResource("8_6vgni")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect4" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.801043
+anchor_bottom = 0.670279
 offset_left = -85.0
 offset_top = -52.0
 offset_right = 1252.0
@@ -119,7 +127,10 @@ script = ExtResource("10_rgpdq")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect5" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.680993
+anchor_bottom = 0.662848
 offset_left = -85.0
 offset_top = -52.0
 offset_right = 1252.0
@@ -135,10 +146,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 225.0
-offset_top = 37.0
-offset_right = 554.0
-offset_bottom = 109.0
+offset_left = 419.0
+offset_top = 211.0
+offset_right = 853.0
+offset_bottom = 283.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_5e6cr")
@@ -162,10 +173,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 226.0
-offset_top = 87.0
-offset_right = 556.0
-offset_bottom = 287.0
+offset_left = 419.0
+offset_top = 207.0
+offset_right = 852.0
+offset_bottom = 513.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 18
@@ -195,18 +206,18 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -561.0
+offset_left = -930.0
 offset_top = 16.0
-offset_right = 88.0
-offset_bottom = 117.0
+offset_right = 981.0
+offset_bottom = 163.0
 grow_horizontal = 2
 alignment = 1
 
 [node name="Label2" type="Label" parent="ContainerLabel"]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("2_5e6cr")
-theme_override_font_sizes/font_size = 91
+theme_override_font_sizes/font_size = 140
 text = "FINDERMIND"
 horizontal_alignment = 1
 vertical_alignment = 1

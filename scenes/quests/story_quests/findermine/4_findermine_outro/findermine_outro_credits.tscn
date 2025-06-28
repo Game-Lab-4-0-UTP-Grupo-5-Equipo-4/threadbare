@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://bil1l67qpw0qt"]
+[gd_scene load_steps=21 format=4 uid="uid://bil1l67qpw0qt"]
 
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_tbbn2"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_ycese"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cahbiw4acwkd2" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/gifs/ezgif.com-gif-to-sprite-converter.png" id="3_ycese"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_nfpv2"]
 [ext_resource type="Resource" uid="uid://qceybl5dvpcp" path="res://scenes/quests/story_quests/template/4_template_outro/template_outro_components/template_outro.dialogue" id="5_lu5kj"]
+[ext_resource type="FontFile" uid="uid://gko7adidc5h2" path="res://scenes/quests/story_quests/findermine/fonts/Menu/Doctor Glitch.otf" id="7_0342x"]
+[ext_resource type="FontFile" uid="uid://b7m8oh5w3hunh" path="res://scenes/quests/story_quests/findermine/fonts/Menu/sing_14l.ttf" id="8_nfpv2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0342x"]
 atlas = ExtResource("3_ycese")
@@ -132,10 +134,22 @@ frame_progress = 0.454059
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(707, 85)
+position = Vector2(181, 472)
+sprite_frames = ExtResource("3_0342x")
+animation = &"idle_1"
+autoplay = "idle_1"
+
+[node name="Character2" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(774, 292)
 sprite_frames = ExtResource("3_0342x")
 animation = &"idle"
 autoplay = "idle"
+
+[node name="Character3" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(510, 477)
+sprite_frames = ExtResource("3_0342x")
+animation = &"idle_2"
+autoplay = "idle_2"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 
@@ -145,27 +159,83 @@ dialogue = ExtResource("5_lu5kj")
 next_scene = "uid://cufkthb25mpxy"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
-[node name="TextEdit" type="TextEdit" parent="."]
-texture_filter = 6
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 412.0
-offset_top = 41.0
-offset_right = 681.0
-offset_bottom = 111.0
+[node name="ContainerLabel" type="VBoxContainer" parent="."]
+modulate = Color(0.166566, 0.701304, 0.695425, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 133.0
+offset_top = 490.0
+offset_right = 563.0
+offset_bottom = 536.0
 grow_horizontal = 2
-grow_vertical = 2
-text = "  ¡Gracias por darte el tiempo y
-               jugar Findermind!"
-editable = false
-context_menu_enabled = false
-emoji_menu_enabled = false
-shortcut_keys_enabled = false
-selecting_enabled = false
-deselect_on_focus_loss_enabled = false
-drag_and_drop_selection_enabled = false
-virtual_keyboard_enabled = false
-middle_mouse_paste_enabled = false
-empty_selection_clipboard_enabled = false
-use_default_word_separators = false
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="ContainerLabel"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_0342x")
+theme_override_font_sizes/font_size = 31
+text = "¡Gracias por jugar!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContainerLabel2" type="VBoxContainer" parent="."]
+modulate = Color(0.166566, 0.701304, 0.695425, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 132.0
+offset_top = 29.0
+offset_right = 808.0
+offset_bottom = 129.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="ContainerLabel2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_0342x")
+theme_override_font_sizes/font_size = 31
+text = "Este JUEGO FUE CREADO
+GRACIAS A..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContainerLabel3" type="VBoxContainer" parent="."]
+modulate = Color(0.794206, 0.9825, 0.976062, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 171.0
+offset_top = 165.0
+offset_right = 808.0
+offset_bottom = 332.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="ContainerLabel3"]
+texture_filter = 5
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/paragraph_spacing = -5
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("8_nfpv2")
+theme_override_font_sizes/font_size = 34
+text = "DANIEL EDUARDO CABRERA SAAVEDRA - DESARROLLO
+JOAQUÍN GAEL MUÑOZ LÓPEZ - DESARROLLO/NARRATIVA
+LADY LUZ LOAYZA RODRIGUEZ - DESARROLLO/DISEÑO/NARRATIVA
+OSCAR DANIEL ELESCANO ACOSTA - DISEÑO
+
+y a nuestros mentores que gracias a
+su ayuda logramos llegar hasta aquí❤️"
+vertical_alignment = 1
