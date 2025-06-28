@@ -1,19 +1,48 @@
-[gd_resource type="Resource" script_class="Quest" load_steps=2 format=3 uid="uid://c6jyaxog6vvsn"]
+[gd_resource type="Resource" script_class="Quest" load_steps=7 format=3 uid="uid://c6jyaxog6vvsn"]
 
 [ext_resource type="Script" uid="uid://dts1hwdy3phin" path="res://scenes/menus/storybook/components/quest.gd" id="1_nyif8"]
+[ext_resource type="Texture2D" uid="uid://blwldfflkjr20" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_idle.png" id="2_drs5q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drs5q"]
+atlas = ExtResource("2_drs5q")
+region = Rect2(0, 58, 192, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkvcs"]
+atlas = ExtResource("2_drs5q")
+region = Rect2(192, 58, 192, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3b1nx"]
+atlas = ExtResource("2_drs5q")
+region = Rect2(384, 58, 192, 70)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6so4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drs5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkvcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3b1nx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
 
 [resource]
 script = ExtResource("1_nyif8")
-title = "FINDERMINE"
-description = "Despiertas. La habitación está fría. Las paredes respiran el eco de una fábrica abandonada... pero tú no recuerdas cómo llegaste aquí.
+title = "FINDERMIND"
+description = "Despiertas en una habitación fría, dentro de lo que parece una fábrica abandonada, sin recordar cómo llegaste allí. La única salida es una puerta cerrada que requiere una llave, pero al otro lado aguarda una verdad inquietante.
 
-Solo hay una puerta. Cerrada. Una llave la liberaría, pero algo más te espera al otro lado: la verdad.
+Tú fuiste el guardián de este lugar, encargado de protegerlo, pero un momento de distracción desencadenó una tragedia. Ahora, tu prisión no son solo los muros, sino la culpa que te consume.
 
-Eras el guardián de este lugar. Vigilante. Protector. Pero algo salió mal. Un descuido. Un instante de distracción... y la tragedia llegó. Ahora, tu celda no son estos muros, sino tu propia culpa.
-
-Resuelve los puzles que el destino dejó atrás. Encuentra las pistas ocultas en los objetos que alguna vez tuviste en tus manos. Descifra el pasado... antes de que el pasado te devore a ti."
+Resuelve los acertijos que el destino dejó atrás. Encuentra las pistas ocultas en los objetos que alguna vez tuviste en tus manos. Descifra el pasado... antes de que este te devore."
 authors = Array[String]([])
 affiliation = ""
 first_scene = "uid://dafebjx34ypki"
-animation_name = &""
+sprite_frames = SubResource("SpriteFrames_l6so4")
+animation_name = &"idle"
 metadata/_custom_type_script = "uid://dts1hwdy3phin"

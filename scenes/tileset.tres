@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=79 format=3 uid="uid://07fq3rspk8ia"]
+[gd_resource type="TileSet" load_steps=87 format=3 uid="uid://07fq3rspk8ia"]
 
 [ext_resource type="Texture2D" uid="uid://doc4qg7e3kgs" path="res://assets/third_party/tiny-swords/Terrain/Water/Water.png" id="1_glnwb"]
 [ext_resource type="Texture2D" uid="uid://lg5dl13njsg3" path="res://assets/first_party/tiles/Grass_And_Sand_Tiles.png" id="2_jmclm"]
@@ -29,6 +29,10 @@
 [ext_resource type="Texture2D" uid="uid://1b1akldb1lue" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/Pisos2.png" id="20_4o4qi"]
 [ext_resource type="Texture2D" uid="uid://bpb4cxkglfxe6" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/mirror/espejo-roto-armado.png" id="20_p4x88"]
 [ext_resource type="Texture2D" uid="uid://bykki3ta4pjf4" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/mirror/espejo-a-armar.png" id="21_4o4qi"]
+[ext_resource type="Texture2D" uid="uid://g22lbrfeasxl" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/pisos_num.png" id="23_ihs3d"]
+[ext_resource type="Texture2D" uid="uid://didpcor5t1gtj" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/pisos_num_2.1.png" id="25_j1a6i"]
+[ext_resource type="Texture2D" uid="uid://f0skpo31tp0s" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/pisos_num_2.png" id="26_p4ill"]
+[ext_resource type="Texture2D" uid="uid://b5dayxeqi6hgk" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/sonbras.png" id="27_6nf32"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_0wfyh"]
 tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 1, 131072, 1, 2, 1, 65537, 0, 65537, 65537, 1, 131073, 65537, 2, 2, 131073, 0, 65538, 131073, 1, 131074, 131073, 2)
@@ -1569,6 +1573,16 @@ texture_region_size = Vector2i(64, 64)
 11:22/0 = 0
 12:22/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eakj6"]
+texture = ExtResource("23_ihs3d")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmclm"]
 texture = ExtResource("4_qml6a")
 texture_region_size = Vector2i(64, 64)
@@ -1602,6 +1616,38 @@ texture_region_size = Vector2i(64, 64)
 0:3/0/terrain = 2
 0:3/0/terrains_peering_bit/top_side = 2
 2:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_byuf6"]
+texture = ExtResource("25_j1a6i")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ey83s"]
+texture = ExtResource("26_p4ill")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gx6fh"]
+texture = ExtResource("27_6nf32")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yc5yt"]
 polygon = PackedVector2Array(-32, -5.08027, -23.7079, -22.0145, -6.77369, -27.0947, 32, -27.0947, 32, 32, -32, 32)
@@ -2332,6 +2378,10 @@ sources/25 = SubResource("TileSetAtlasSource_p23k4")
 sources/27 = SubResource("TileSetAtlasSource_2w62b")
 sources/28 = SubResource("TileSetAtlasSource_ihs3d")
 sources/26 = SubResource("TileSetAtlasSource_j1a6i")
+sources/29 = SubResource("TileSetAtlasSource_eakj6")
+sources/30 = SubResource("TileSetAtlasSource_byuf6")
+sources/31 = SubResource("TileSetAtlasSource_ey83s")
+sources/32 = SubResource("TileSetAtlasSource_gx6fh")
 pattern_0 = SubResource("TileMapPattern_0wfyh")
 pattern_1 = SubResource("TileMapPattern_sugp2")
 pattern_2 = SubResource("TileMapPattern_jyhfs")

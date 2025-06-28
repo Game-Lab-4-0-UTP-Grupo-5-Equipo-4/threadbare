@@ -71,53 +71,53 @@ script = ExtResource("1_trpx4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_top = -4.0
-offset_right = 1834.0
-offset_bottom = 1033.0
+anchor_left = -0.0432292
+anchor_top = -0.0388889
+anchor_right = 1.04323
+anchor_bottom = 1.0463
+offset_right = -0.00012207
+offset_bottom = 0.00012207
 texture = ExtResource("2_bwacy")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
-offset_left = -106.0
-offset_top = -52.0
-offset_right = 1835.0
-offset_bottom = 1097.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0254075
+anchor_top = 0.00255973
+anchor_right = 0.974113
+anchor_bottom = 0.976962
 texture = ExtResource("2_bwacy")
 script = ExtResource("3_2m186")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0610687
-anchor_right = 0.508179
-anchor_bottom = 0.509161
-offset_left = -85.0
-offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+anchor_right = 0.967881
+anchor_bottom = 0.97099
 texture = ExtResource("7_sdlg6")
 script = ExtResource("5_rlutc")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect3" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
-offset_left = -194.0
-offset_top = -52.0
-offset_right = 1835.0
-offset_bottom = 1032.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0278044
+anchor_top = 0.00170648
+anchor_right = 0.9372
+anchor_bottom = 0.973549
 texture = ExtResource("8_2m186")
 script = ExtResource("7_sghvf")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect4" type="TextureRect" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0594329
-anchor_right = 0.506543
-anchor_bottom = 0.508197
-offset_left = -85.0
-offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+anchor_left = -0.100181
+anchor_top = -0.0443686
+anchor_right = 1.10673
+anchor_bottom = 1.10461
 texture = ExtResource("9_6nn4d")
 script = ExtResource("9_h8l60")
 metadata/_edit_use_anchors_ = true
@@ -125,32 +125,26 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect5" type="TextureRect" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0610687
-anchor_right = 0.504907
-anchor_bottom = 0.509161
-offset_left = -85.0
-offset_top = -52.0
-offset_right = 1252.0
-offset_bottom = 699.0
+anchor_left = -0.101817
+anchor_top = -0.0443686
+anchor_right = 1.1051
+anchor_bottom = 1.10558
 texture = ExtResource("10_4cw6x")
 script = ExtResource("11_b58db")
 metadata/_edit_use_anchors_ = true
 
 [node name="ContainerButtons" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 508.0
-offset_top = 118.0
-offset_right = 838.0
-offset_bottom = 407.0
+anchors_preset = -1
+anchor_left = 0.715625
+anchor_top = 0.59537
+anchor_right = 0.942187
+anchor_bottom = 0.996296
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 18
 alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="BT_Play" type="Button" parent="ContainerButtons"]
 layout_mode = 2
@@ -184,17 +178,17 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -574.0
-offset_right = 96.0
-offset_bottom = 146.0
+offset_left = -923.0
+offset_right = 912.0
+offset_bottom = 218.0
 grow_horizontal = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="ContainerLabel"]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("2_1557p")
-theme_override_font_sizes/font_size = 91
+theme_override_font_sizes/font_size = 140
 text = "FINDERMIND"
 horizontal_alignment = 1
 vertical_alignment = 1
