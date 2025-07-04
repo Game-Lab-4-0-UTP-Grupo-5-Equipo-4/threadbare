@@ -1,6 +1,5 @@
-[gd_scene load_steps=21 format=4 uid="uid://bil1l67qpw0qt"]
+[gd_scene load_steps=20 format=4 uid="uid://bil1l67qpw0qt"]
 
-[ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_tbbn2"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_ycese"]
 [ext_resource type="SpriteFrames" uid="uid://d3hplvaw1un1n" path="res://scenes/quests/story_quests/findermine/findermine_player_components/findermine_player.tres" id="3_0342x"]
 [ext_resource type="Texture2D" uid="uid://cahbiw4acwkd2" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/gifs/ezgif.com-gif-to-sprite-converter.png" id="3_ycese"]
@@ -103,8 +102,6 @@ animations = [{
 [node name="Outro" type="Node2D"]
 texture_filter = 1
 
-[node name="HUD" parent="." instance=ExtResource("1_tbbn2")]
-
 [node name="TileMapLayers" type="Node2D" parent="."]
 
 [node name="Ground" type="TileMapLayer" parent="TileMapLayers"]
@@ -134,7 +131,8 @@ frame_progress = 0.454059
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(181, 472)
+position = Vector2(167.5, 438)
+scale = Vector2(0.984375, 0.9375)
 sprite_frames = ExtResource("3_0342x")
 animation = &"idle_1"
 autoplay = "idle_1"
@@ -146,7 +144,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="Character3" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(510, 477)
+position = Vector2(514, 441)
 sprite_frames = ExtResource("3_0342x")
 animation = &"idle_2"
 autoplay = "idle_2"
@@ -165,7 +163,7 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = 133.0
-offset_top = 490.0
+offset_top = 420.0
 offset_right = 563.0
 offset_bottom = 536.0
 grow_horizontal = 2
@@ -216,9 +214,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = 171.0
-offset_top = 165.0
+offset_top = 135.0
 offset_right = 808.0
-offset_bottom = 332.0
+offset_bottom = 426.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4

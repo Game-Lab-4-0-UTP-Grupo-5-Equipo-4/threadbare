@@ -1,5 +1,5 @@
 extends Sprite2D
-class_name PuzzlePiece
+class_name PuzzlePiece2
 
 # Variables de control
 var is_dragging = false
