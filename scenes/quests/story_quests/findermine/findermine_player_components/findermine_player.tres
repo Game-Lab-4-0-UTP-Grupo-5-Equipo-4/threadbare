@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dhgjuu6vwoxis" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_attack_01.png" id="1_ig5il"]
 [ext_resource type="Texture2D" uid="uid://blwldfflkjr20" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_idle.png" id="2_d6nri"]
+
 [ext_resource type="Texture2D" uid="uid://vnx2m2p3iqaf" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/Personaje alma.png" id="3_h33un"]
 [ext_resource type="Texture2D" uid="uid://7twcvsl7p1xo" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_player_walk.png" id="3_ig5il"]
 [ext_resource type="Texture2D" uid="uid://dfopovon03ohg" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/character/alex_sanado_player_idle.png" id="4_20ukh"]

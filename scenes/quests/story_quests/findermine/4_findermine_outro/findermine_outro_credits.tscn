@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cahbiw4acwkd2" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/tilesets/gifs/ezgif.com-gif-to-sprite-converter.png" id="3_ycese"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_nfpv2"]
 [ext_resource type="Resource" uid="uid://qceybl5dvpcp" path="res://scenes/quests/story_quests/template/4_template_outro/template_outro_components/template_outro.dialogue" id="5_lu5kj"]
+
 [ext_resource type="FontFile" uid="uid://gko7adidc5h2" path="res://scenes/quests/story_quests/findermine/fonts/Menu/Doctor Glitch.otf" id="7_0342x"]
 [ext_resource type="FontFile" uid="uid://b7m8oh5w3hunh" path="res://scenes/quests/story_quests/findermine/fonts/Menu/sing_14l.ttf" id="8_nfpv2"]
 
@@ -131,6 +132,7 @@ frame_progress = 0.454059
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
+
 position = Vector2(167.5, 438)
 scale = Vector2(0.984375, 0.9375)
 sprite_frames = ExtResource("3_0342x")
@@ -139,6 +141,7 @@ autoplay = "idle_1"
 
 [node name="Character2" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(774, 292)
+
 sprite_frames = ExtResource("3_0342x")
 animation = &"idle"
 autoplay = "idle"
