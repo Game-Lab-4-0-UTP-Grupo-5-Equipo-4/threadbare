@@ -5,13 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_0nwde"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_ov00x"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_3v77k"]
+[ext_resource type="Resource" uid="uid://wemkojusegpr" path="res://scenes/quests/story_quests/findermine/1_findermine_stealth/findermine_stealth_components/findermine_stealth.dialogue" id="9_cqx6t"]
 [ext_resource type="PackedScene" uid="uid://7kc7jat8au7e" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/player/Player.tscn" id="9_eu5ge"]
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_30nml"]
 [ext_resource type="Texture2D" uid="uid://b3xkk5bc6dhdu" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/Calendarpopoup .png" id="10_a07c4"]
 [ext_resource type="Script" uid="uid://d37m4sr1buv7c" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/calendar/calendar_pop_up.gd" id="10_d1g70"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_j32cv"]
 [ext_resource type="PackedScene" uid="uid://dfwcl12yotmkt" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/calendar/calendar.tscn" id="12_5xi0n"]
-[ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_11j8t"]
 [ext_resource type="Script" uid="uid://clei0uigm35tc" path="res://scenes/quests/story_quests/findermine/findermine_addly/scripts/items/clock/reloj_pop_up.gd" id="12_d4kod"]
 [ext_resource type="PackedScene" uid="uid://cus3ydjp3e7vo" path="res://scenes/quests/story_quests/findermine/findermine_addly/scenes/clock/Clock.tscn" id="13_4n730"]
 [ext_resource type="Texture2D" uid="uid://66dvjf5r41se" path="res://scenes/quests/story_quests/findermine/findermine_addly/assets/slides/relogPopUp.png" id="13_nbxuu"]
@@ -64,7 +64,7 @@ collected_dialogue = ExtResource("10_30nml")
 
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("11_j32cv")
-dialogue = ExtResource("12_11j8t")
+dialogue = ExtResource("9_cqx6t")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Grass2" type="TileMapLayer" parent="."]
